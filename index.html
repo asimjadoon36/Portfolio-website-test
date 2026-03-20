@@ -6,7 +6,6 @@
   <meta name="description" content="Done-for-you lead generation for service businesses. Ayaan Malik builds predictable client pipelines using paid ads, optimized funnels, and automated follow-up." />
   <title>Ayaan Malik — Done-For-You Lead Generation for Service Businesses</title>
 
-  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -20,7 +19,6 @@
     }
   </script>
 
-  <!-- Inter Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -34,29 +32,16 @@
       transform: translateY(28px);
       transition: opacity 0.65s ease, transform 0.65s ease;
     }
-    .fade-up.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
     .delay-1 { transition-delay: 0.1s; }
     .delay-2 { transition-delay: 0.2s; }
     .delay-3 { transition-delay: 0.3s; }
     .delay-4 { transition-delay: 0.4s; }
 
-    .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.4s ease;
-    }
-    .faq-answer.open {
-      max-height: 300px;
-    }
-    .faq-chevron {
-      transition: transform 0.3s ease;
-    }
-    .faq-item.open .faq-chevron {
-      transform: rotate(180deg);
-    }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+    .faq-answer.open { max-height: 300px; }
+    .faq-chevron { transition: transform 0.3s ease; }
+    .faq-item.open .faq-chevron { transform: rotate(180deg); }
   </style>
 </head>
 
@@ -125,11 +110,60 @@
     <!-- ===== PROBLEM SECTION ===== -->
     <section class="py-20 sm:py-28 px-5 sm:px-8 bg-white">
       <div class="max-w-5xl mx-auto">
-        <div class="text-center mb-14 fade-up">
-          <p class="text-blue-600 text-xs sm:text-sm font-semibold tracking-[0.15em] uppercase mb-3">Sound Familiar?</p>
-          <h2 class="text-3xl sm:text-4xl font-bold text-zinc-900 leading-tight max-w-2xl mx-auto">
-            You're excellent at your work. Growing your client list shouldn't feel like a second job.
-          </h2>
+
+        <!-- Header with character on right (desktop) -->
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-8 mb-14 fade-up">
+          <div class="text-center sm:text-left">
+            <p class="text-blue-600 text-xs sm:text-sm font-semibold tracking-[0.15em] uppercase mb-3">Sound Familiar?</p>
+            <h2 class="text-3xl sm:text-4xl font-bold text-zinc-900 leading-tight max-w-sm">
+              You're excellent at your work. Getting clients shouldn't feel like a second job.
+            </h2>
+          </div>
+          <!-- CHARACTER 1: The Stressed Owner -->
+          <div class="hidden sm:block flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 160" class="w-36 h-auto" aria-hidden="true">
+              <!-- Body - slate shirt -->
+              <rect x="18" y="84" width="84" height="76" rx="16" fill="#64748B"/>
+              <!-- Collar notch -->
+              <polygon points="52,84 60,102 68,84" fill="#CBD5E1"/>
+              <!-- Neck -->
+              <rect x="50" y="78" width="20" height="12" rx="5" fill="#FBBF8E"/>
+              <!-- Head -->
+              <circle cx="60" cy="50" r="34" fill="#FBBF8E"/>
+              <!-- Ears -->
+              <ellipse cx="26" cy="52" rx="8" ry="9" fill="#FBBF8E"/>
+              <ellipse cx="94" cy="52" rx="8" ry="9" fill="#FBBF8E"/>
+              <!-- Hair -->
+              <path d="M26 42 Q26 12 60 10 Q94 12 94 42 Q87 22 60 22 Q33 22 26 42Z" fill="#1C1917"/>
+              <!-- Eye whites -->
+              <ellipse cx="45" cy="48" rx="8" ry="9" fill="white"/>
+              <ellipse cx="75" cy="48" rx="8" ry="9" fill="white"/>
+              <!-- Irises (looking slightly down) -->
+              <circle cx="44" cy="50" r="5" fill="#1C1917"/>
+              <circle cx="74" cy="50" r="5" fill="#1C1917"/>
+              <!-- Eye highlights -->
+              <circle cx="46" cy="48" r="2" fill="white"/>
+              <circle cx="76" cy="48" r="2" fill="white"/>
+              <!-- Eyebrows - worried (inner corners lifted) -->
+              <path d="M36 33 Q43 28 50 34" stroke="#1C1917" stroke-width="3" fill="none" stroke-linecap="round"/>
+              <path d="M70 34 Q77 28 84 33" stroke="#1C1917" stroke-width="3" fill="none" stroke-linecap="round"/>
+              <!-- Mouth - wavy grimace -->
+              <path d="M44 68 Q52 63 60 68 Q68 73 76 68" stroke="#1C1917" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- Left arm - hanging limp -->
+              <path d="M18 96 Q3 112 7 130" stroke="#64748B" stroke-width="14" fill="none" stroke-linecap="round"/>
+              <circle cx="8" cy="130" r="9" fill="#FBBF8E"/>
+              <!-- Right arm - raised to head (stressed) -->
+              <path d="M102 96 Q118 78 104 55" stroke="#64748B" stroke-width="14" fill="none" stroke-linecap="round"/>
+              <circle cx="101" cy="52" r="10" fill="#FBBF8E"/>
+              <!-- Sweat drops -->
+              <ellipse cx="100" cy="16" rx="5" ry="8" fill="#93C5FD" transform="rotate(15 100 16)"/>
+              <ellipse cx="111" cy="28" rx="4" ry="6" fill="#BFDBFE" transform="rotate(5 111 28)"/>
+              <!-- Stress marks -->
+              <line x1="108" y1="42" x2="115" y2="38" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="112" y1="51" x2="119" y2="51" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="108" y1="60" x2="115" y2="64" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
         </div>
 
         <div class="grid sm:grid-cols-2 gap-4 sm:gap-6">
@@ -270,7 +304,6 @@
           </h2>
         </div>
 
-        <!-- Testimonials -->
         <div class="grid sm:grid-cols-3 gap-6 mb-16">
 
           <div class="p-6 rounded-2xl bg-zinc-50 border border-zinc-100 flex flex-col fade-up">
@@ -355,14 +388,62 @@
     <!-- ===== HOW IT WORKS ===== -->
     <section id="how-it-works" class="py-20 sm:py-28 px-5 sm:px-8 bg-zinc-50">
       <div class="max-w-4xl mx-auto">
-        <div class="text-center mb-14 fade-up">
-          <p class="text-blue-600 text-xs sm:text-sm font-semibold tracking-[0.15em] uppercase mb-3">The Process</p>
-          <h2 class="text-3xl sm:text-4xl font-bold text-zinc-900 leading-tight">
-            Three steps to a full pipeline.
-          </h2>
-          <p class="text-zinc-500 text-lg mt-3 max-w-lg mx-auto">
-            From your first conversation to qualified leads in your inbox — here's what it looks like.
-          </p>
+
+        <!-- Header with guide character on left (desktop) -->
+        <div class="flex flex-col sm:flex-row items-center gap-8 mb-14 fade-up">
+          <!-- CHARACTER 2: The Guide — pointing toward the steps -->
+          <div class="hidden sm:block flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 145 160" class="w-36 h-auto" aria-hidden="true">
+              <!-- Body - blue jacket -->
+              <rect x="18" y="84" width="84" height="76" rx="16" fill="#2563EB"/>
+              <!-- Collar/shirt peek -->
+              <polygon points="52,84 60,100 68,84" fill="#EFF6FF"/>
+              <!-- Neck -->
+              <rect x="50" y="78" width="20" height="12" rx="5" fill="#FBBF8E"/>
+              <!-- Head -->
+              <circle cx="60" cy="50" r="34" fill="#FBBF8E"/>
+              <!-- Ears -->
+              <ellipse cx="26" cy="52" rx="8" ry="9" fill="#FBBF8E"/>
+              <ellipse cx="94" cy="52" rx="8" ry="9" fill="#FBBF8E"/>
+              <!-- Hair -->
+              <path d="M26 42 Q26 12 60 10 Q94 12 94 42 Q87 22 60 22 Q33 22 26 42Z" fill="#1C1917"/>
+              <!-- Eyes (looking right - confident) -->
+              <ellipse cx="45" cy="48" rx="8" ry="9" fill="white"/>
+              <ellipse cx="75" cy="48" rx="8" ry="9" fill="white"/>
+              <circle cx="47" cy="49" r="5" fill="#1C1917"/>
+              <circle cx="77" cy="49" r="5" fill="#1C1917"/>
+              <circle cx="49" cy="47" r="2" fill="white"/>
+              <circle cx="79" cy="47" r="2" fill="white"/>
+              <!-- Eyebrows - friendly arch -->
+              <path d="M36 33 Q43 28 50 33" stroke="#1C1917" stroke-width="3" fill="none" stroke-linecap="round"/>
+              <path d="M70 33 Q77 28 84 33" stroke="#1C1917" stroke-width="3" fill="none" stroke-linecap="round"/>
+              <!-- Mouth - confident smile -->
+              <path d="M44 66 Q60 77 76 66" stroke="#1C1917" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              <!-- Cheek blush -->
+              <ellipse cx="36" cy="60" rx="8" ry="5" fill="#FCA5A5" opacity="0.4"/>
+              <ellipse cx="84" cy="60" rx="8" ry="5" fill="#FCA5A5" opacity="0.4"/>
+              <!-- Left arm - casual down -->
+              <path d="M18 96 Q3 112 7 130" stroke="#2563EB" stroke-width="14" fill="none" stroke-linecap="round"/>
+              <circle cx="8" cy="130" r="9" fill="#FBBF8E"/>
+              <!-- Right arm - extended pointing right -->
+              <path d="M102 92 Q122 84 136 72" stroke="#2563EB" stroke-width="14" fill="none" stroke-linecap="round"/>
+              <!-- Pointing hand -->
+              <circle cx="135" cy="70" r="9" fill="#FBBF8E"/>
+              <!-- Pointing index finger -->
+              <ellipse cx="143" cy="63" rx="5" ry="8" fill="#FBBF8E" transform="rotate(-35 143 63)"/>
+              <!-- Star sparkle at fingertip -->
+              <path d="M140 54 L142 48 L144 54 L150 56 L144 58 L142 64 L140 58 L134 56 Z" fill="#FCD34D"/>
+            </svg>
+          </div>
+          <div class="text-center sm:text-left">
+            <p class="text-blue-600 text-xs sm:text-sm font-semibold tracking-[0.15em] uppercase mb-3">The Process</p>
+            <h2 class="text-3xl sm:text-4xl font-bold text-zinc-900 leading-tight">
+              Three steps to a full pipeline.
+            </h2>
+            <p class="text-zinc-500 text-lg mt-3 max-w-sm">
+              From your first conversation to qualified leads in your inbox — here's what it looks like.
+            </p>
+          </div>
         </div>
 
         <div class="relative">
@@ -471,11 +552,56 @@
         <p class="text-zinc-400 text-lg leading-relaxed max-w-xl mx-auto mb-10">
           Book a free 30-minute strategy call. We'll look at your current situation, identify the biggest opportunities, and give you a clear picture of what's possible — no strings attached.
         </p>
-        <!-- Replace href below with your Calendly or booking link -->
-        <a href="#book" class="inline-block bg-blue-600 hover:bg-blue-500 text-white px-10 py-5 rounded-xl font-bold text-lg transition-colors duration-200 shadow-xl shadow-blue-600/20">
+
+        <!-- CHARACTER 3: The Celebrating Client -->
+        <div class="flex justify-center mb-8">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" class="w-36 h-auto" aria-hidden="true">
+            <!-- Body - emerald green -->
+            <rect x="38" y="84" width="84" height="76" rx="16" fill="#059669"/>
+            <!-- Collar/shirt peek -->
+            <polygon points="72,84 80,100 88,84" fill="#D1FAE5"/>
+            <!-- Neck -->
+            <rect x="70" y="78" width="20" height="12" rx="5" fill="#FBBF8E"/>
+            <!-- Head -->
+            <circle cx="80" cy="50" r="34" fill="#FBBF8E"/>
+            <!-- Ears -->
+            <ellipse cx="46" cy="52" rx="8" ry="9" fill="#FBBF8E"/>
+            <ellipse cx="114" cy="52" rx="8" ry="9" fill="#FBBF8E"/>
+            <!-- Hair -->
+            <path d="M46 42 Q46 12 80 10 Q114 12 114 42 Q107 22 80 22 Q53 22 46 42Z" fill="#1C1917"/>
+            <!-- Eyes - happy squint (^) -->
+            <path d="M62 46 Q70 38 78 46" stroke="#1C1917" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+            <path d="M82 46 Q90 38 98 46" stroke="#1C1917" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+            <!-- Rosy cheeks -->
+            <ellipse cx="58" cy="62" rx="10" ry="6" fill="#FCA5A5" opacity="0.5"/>
+            <ellipse cx="102" cy="62" rx="10" ry="6" fill="#FCA5A5" opacity="0.5"/>
+            <!-- Mouth - big open smile -->
+            <path d="M60 70 Q80 86 100 70" fill="#1C1917"/>
+            <path d="M63 71 Q80 82 97 71 Q80 78 63 71Z" fill="white"/>
+            <!-- Left arm - raised up-left -->
+            <path d="M38 98 Q18 80 14 60" stroke="#059669" stroke-width="14" fill="none" stroke-linecap="round"/>
+            <circle cx="14" cy="57" r="10" fill="#FBBF8E"/>
+            <!-- Right arm - raised up-right -->
+            <path d="M122 98 Q142 80 146 60" stroke="#059669" stroke-width="14" fill="none" stroke-linecap="round"/>
+            <circle cx="146" cy="57" r="10" fill="#FBBF8E"/>
+            <!-- Confetti scattered around -->
+            <circle cx="24" cy="28" r="6" fill="#FCD34D"/>
+            <rect x="136" y="20" width="10" height="10" rx="2" fill="#F87171" transform="rotate(20 141 25)"/>
+            <circle cx="148" cy="38" r="5" fill="#60A5FA"/>
+            <rect x="10" y="40" width="8" height="8" rx="2" fill="#A78BFA" transform="rotate(-15 14 44)"/>
+            <path d="M130 10 L132 4 L134 10 L140 12 L134 14 L132 20 L130 14 L124 12 Z" fill="#FCD34D"/>
+            <circle cx="22" cy="110" r="4" fill="#34D399"/>
+            <rect x="144" y="104" width="7" height="7" rx="1" fill="#F59E0B" transform="rotate(10 148 108)"/>
+          </svg>
+        </div>
+
+        <!-- Placeholder CTA button — replace href with your booking link -->
+        <a href="#" class="inline-block bg-blue-600 hover:bg-blue-500 text-white px-10 py-5 rounded-xl font-bold text-lg transition-colors duration-200 shadow-xl shadow-blue-600/20 cursor-pointer">
           Book a Free Strategy Call →
         </a>
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 mt-8 text-zinc-500 text-sm">
+        <p class="text-zinc-600 text-xs mt-3">[ Booking link goes here — replace href with your Calendly URL ]</p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 mt-6 text-zinc-500 text-sm">
           <span class="flex items-center gap-2">
             <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
             No contracts
@@ -499,41 +625,29 @@
     <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-zinc-500 text-sm">
       <p class="font-semibold text-zinc-400">Ayaan Malik</p>
       <p>© 2025 Ayaan Malik. All rights reserved.</p>
-      <!-- Replace with Ayaan's real email -->
       <a href="mailto:hello@ayaanmalik.com" class="hover:text-zinc-300 transition-colors">hello@ayaanmalik.com</a>
     </div>
   </footer>
 
   <script>
-    // Scroll-triggered fade-up animations
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
+        if (entry.isIntersecting) entry.target.classList.add('visible');
       });
     }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
     document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-    // FAQ accordion
     document.querySelectorAll('.faq-trigger').forEach(trigger => {
       trigger.addEventListener('click', () => {
         const item = trigger.closest('.faq-item');
         const answer = item.querySelector('.faq-answer');
         const isOpen = item.classList.contains('open');
-
-        // Close all
         document.querySelectorAll('.faq-item').forEach(i => {
           i.classList.remove('open');
           i.querySelector('.faq-answer').classList.remove('open');
         });
-
-        // Open clicked if it was closed
-        if (!isOpen) {
-          item.classList.add('open');
-          answer.classList.add('open');
-        }
+        if (!isOpen) { item.classList.add('open'); answer.classList.add('open'); }
       });
     });
   </script>
