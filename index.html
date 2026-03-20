@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Done-for-you lead generation for service businesses. Ayaan Malik builds predictable client pipelines using paid ads, optimized funnels, and automated follow-up." />
+  <title>Ayaan Malik — Done-For-You Lead Generation for Service Businesses</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <style>
+    html { scroll-behavior: smooth; }
+    * { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+    .fade-up {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .delay-1 { transition-delay: 0.1s; }
+    .delay-2 { transition-delay: 0.2s; }
+    .delay-3 { transition-delay: 0.3s; }
+    .delay-4 { transition-delay: 0.4s; }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+    }
+    .faq-answer.open {
+      max-height: 300px;
+    }
+    .faq-chevron {
+      transition: transform 0.3s ease;
+    }
+    .faq-item.open .faq-chevron {
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+
+<body class="bg-white text-zinc-900 font-sans">
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-zinc-100">
+    <nav class="max-w-6xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between">
+      <a href="#" class="font-bold text-zinc-900 text-lg tracking-tight">Ayaan Malik</a>
+      <a href="#book" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors duration-200">
+        Book a Strategy Call
+      </a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="bg-zinc-950 text-white px-5 sm:px-8 pt-20 pb-24 sm:pt-28 sm:pb-36">
+      <div class="max-w-4xl mx-auto text-center">
+        <p class="text-blue-400 text-xs sm:text-sm font-semibold tracking-[0.15em] uppercase mb-5">
+          Done-For-You Lead Generation · Service Businesses
+        </p>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.1] tracking-tight mb-6">
+          Your pipeline shouldn't<br class="hidden sm:block" /> depend on referrals<br class="hidden sm:block" /> and good timing.
+        </h1>
+        <p class="text-zinc-400 text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto mb-10">
+          We build service businesses a predictable, done-for-you lead generation system. Ads, funnels, CRM, tracking — all handled. You just focus on closing deals.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+          <a href="#book" class="bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-xl font-semibold text-base sm:text-lg transition-colors duration-200">
+            Book a Free Strategy Call →
+          </a>
+          <a href="#how-it-works" class="border border-zinc-700 hover:border-zinc-500 text-zinc-400 hover:text-white px-8 py-4 rounded-xl font-medium text-base sm:text-lg transition-colors duration-200">
+            See How It Works
+          </a>
+        </div>
+        <p class="text-zinc-600 text-sm mt-6">No pitch. No pressure. Just a 30-minute conversation.</p>
+      </div>
+    </section>
+
+    <!-- ===== STATS BAR ===== -->
+    <section class="bg-zinc-900 border-y border-zinc-800">
+      <div class="max-w-5xl mx-auto px-5 sm:px-8 py-8 sm:py-10">
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
+          <div class="fade-up">
+            <p class="text-2xl sm:text-3xl font-bold text-white">150+</p>
+            <p class="text-zinc-500 text-xs sm:text-sm mt-1 leading-snug">Qualified leads<br />generated per month</p>
+          </div>
+          <div class="fade-up delay-1">
+            <p class="text-2xl sm:text-3xl font-bold text-white">$2.3M</p>
+            <p class="text-zinc-500 text-xs sm:text-sm mt-1 leading-snug">Client pipeline<br />created</p>
+          </div>
+          <div class="fade-up delay-2">
+            <p class="text-2xl sm:text-3xl font-bold text-white">40+</p>
+            <p class="text-zinc-500 text-xs sm:text-sm mt-1 leading-snug">Service businesses<br />helped</p>
+          </div>
+          <div class="fade-up delay-3">
+            <p class="text-2xl sm:text-3xl font-bold text-white">3.2×</p>
+            <p class="text-zinc-500 text-xs sm:text-sm mt-1 leading-snug">Average return<br />on ad spend</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROBLEM SECTION ===== -->
+    <section class="py-20 sm:py-28 px-5 sm:px-8 bg-white">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-14 fade-up">
+          <p class="text-blue-600 text-xs sm:text-sm font-semibold tracking-[0.15em] uppercase mb-3">Sound Familiar?</p>
+          <h2 class="text-3xl sm:text-4xl font-bold text-zinc-900 leading-tight max-w-2xl mx-auto">
+            You're excellent at your work. Growing your client list shouldn't feel like a second job.
+          </h2>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-4 sm:gap-6">
+
+          <div class="p-6 rounded-2xl bg-zinc-50 border border-zinc-100 fade-up">
+            <div class="w-10 h-10 bg-red-50 text-red-500 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg>
+            </div>
+            <h3 class="font-semibold text-zinc-900 mb-2">Feast or famine</h3>
+            <p class="text-zinc-500 text-sm leading-relaxed">
+              Good months, bad months — no way to predict what's coming next. The inconsistency makes it impossible to plan, hire, or grow with any confidence.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-zinc-50 border border-zinc-100 fade-up delay-1">
+            <div class="w-10 h-10 bg-orange-50 text-orange-500 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3 class="font-semibold text-zinc-900 mb-2">Wasted ad spend with nothing to show</h3>
+            <p class="text-zinc-500 text-sm leading-relaxed">
+              You've tried ads. Thousands of dollars in, you got clicks and impressions — not clients. It's hard to tell what's working and what's just burning money with a nice dashboard around it.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-zinc-50 border border-zinc-100 fade-up delay-2">
+            <div class="w-10 h-10 bg-yellow-50 text-yellow-600 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </div>
+            <h3 class="font-semibold text-zinc-900 mb-2">Burned by agencies before</h3>
+            <p class="text-zinc-500 text-sm leading-relaxed">
+              You were promised results. What you got was vague reports, ignored follow-ups, and polished excuses for why the numbers didn't move. The skepticism is earned — and we get it.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-zinc-50 border border-zinc-100 fade-up delay-3">
+            <div class="w-10 h-10 bg-purple-50 text-purple-500 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3 class="font-semibold text-zinc-900 mb-2">No time to figure it out yourself</h3>
+            <p class="text-zinc-500 text-sm leading-relaxed">
+              You're running a business. You don't have hours to spend learning Meta Ads Manager, A/B testing landing pages, and manually chasing down leads. That time belongs to your clients.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOLUTION SECTION ===== -->
+    <section class="py-20 sm:py-28 px-5 sm:px-8 bg-zinc-950 text-white">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-14 fade-up">
+          <p class="text-blue-400 text-xs sm:text-sm font-semibold tracking-[0.15em] uppercase mb-3">The System</p>
+          <h2 class="text-3xl sm:text-4xl font-bold leading-tight max-w-2xl mx-auto">
+            A complete lead machine. Built for you. Runs without you.
+          </h2>
+          <p class="text-zinc-400 text-lg mt-4 max-w-xl mx-auto leading-relaxed">
+            Most businesses don't have a marketing problem. They have a systems problem. Here's what we build.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+          <div class="p-6 rounded-2xl bg-zinc-900 border border-zinc-800 fade-up">
+            <div class="w-10 h-10 bg-blue-600/20 text-blue-400 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <h3 class="font-semibold text-white mb-2">Paid Advertising</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed">
+              Google and Meta ads built to reach the right people at the right moment — not just get clicks. Every campaign is structured around one goal: qualified leads in your pipeline.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-zinc-900 border border-zinc-800 fade-up delay-1">
+            <div class="w-10 h-10 bg-blue-600/20 text-blue-400 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+            </div>
+            <h3 class="font-semibold text-white mb-2">Landing Pages That Convert</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed">
+              Purpose-built pages that speak directly to your ideal client. No generic templates — optimized and tested to turn traffic into booked appointments.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-zinc-900 border border-zinc-800 fade-up delay-2">
+            <div class="w-10 h-10 bg-blue-600/20 text-blue-400 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3 class="font-semibold text-white mb-2">Automated Follow-Up Funnels</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed">
+              Leads that don't convert immediately don't disappear — they get nurtured. Automated sequences keep you front-of-mind until they're ready to move forward.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-zinc-900 border border-zinc-800 fade-up">
+            <div class="w-10 h-10 bg-blue-600/20 text-blue-400 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <h3 class="font-semibold text-white mb-2">CRM & Pipeline Setup</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed">
+              We set up your CRM so every lead is tracked, prioritized, and easy to manage. Your team stops losing prospects in a spreadsheet and starts closing them.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-zinc-900 border border-zinc-800 fade-up delay-1">
+            <div class="w-10 h-10 bg-blue-600/20 text-blue-400 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            <h3 class="font-semibold text-white mb-2">Performance Reporting</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed">
+              Weekly reports with the numbers that actually matter: cost per lead, qualified lead rate, pipeline value, ROAS. No smoke and mirrors — full transparency, always.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-blue-600/10 border border-blue-600/30 fade-up delay-2 flex flex-col">
+            <div class="w-10 h-10 bg-blue-600/20 text-blue-400 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3 class="font-semibold text-white mb-2">The Outcome</h3>
+            <p class="text-zinc-400 text-sm leading-relaxed flex-1">
+              A predictable flow of qualified leads — without you having to touch any of it. You show up, close deals, and grow. That's the whole point.
+            </p>
+            <a href="#book" class="mt-6 inline-block bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold px-5 py-3 rounded-lg transition-colors text-center">
+              Book a Strategy Call →
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TRUST / PROOF SECTION ===== -->
+    <section class="py-20 sm:py-28 px-5 sm:px-8 bg-white">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-14 fade-up">
+          <p class="text-blue-600 text-xs sm:text-sm font-semibold tracking-[0.15em] uppercase mb-3">Real Results</p>
+          <h2 class="text-3xl sm:text-4xl font-bold text-zinc-900 leading-tight">
+            What it looks like when the system works.
+          </h2>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="grid sm:grid-cols-3 gap-6 mb-16">
+
+          <div class="p-6 rounded-2xl bg-zinc-50 border border-zinc-100 flex flex-col fade-up">
+            <div class="flex items-center gap-1 mb-4">
+              <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <p class="text-zinc-700 text-sm leading-relaxed flex-1 mb-6">
+              "Before working with Ayaan, we were spending $3k/month on ads with no idea what was working. Now we get 30–40 qualified new patient inquiries every month and our front desk actually has a process to handle them."
+            </p>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 font-bold text-sm flex-shrink-0">SC</div>
+              <div>
+                <p class="font-semibold text-zinc-900 text-sm">Dr. Sarah Chen</p>
+                <p class="text-zinc-400 text-xs">Owner, Bright Smile Dental — Chicago, IL</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-zinc-50 border border-zinc-100 flex flex-col fade-up delay-1">
+            <div class="flex items-center gap-1 mb-4">
+              <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <p class="text-zinc-700 text-sm leading-relaxed flex-1 mb-6">
+              "I was skeptical — we'd been burned by two agencies before. Ayaan was upfront about timelines and what to expect from day one. Within 90 days we had a consistent pipeline of consultation requests. It's our most reliable client source now."
+            </p>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-zinc-200 flex items-center justify-center text-zinc-700 font-bold text-sm flex-shrink-0">MW</div>
+              <div>
+                <p class="font-semibold text-zinc-900 text-sm">Marcus Webb</p>
+                <p class="text-zinc-400 text-xs">Managing Partner, Webb Legal Group — Austin, TX</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-zinc-50 border border-zinc-100 flex flex-col fade-up delay-2">
+            <div class="flex items-center gap-1 mb-4">
+              <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <p class="text-zinc-700 text-sm leading-relaxed flex-1 mb-6">
+              "I used to spend every Sunday worrying about where the next client was coming from. Now I just focus on the work. The system Ayaan built runs in the background and qualified leads show up in my inbox."
+            </p>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-rose-100 flex items-center justify-center text-rose-700 font-bold text-sm flex-shrink-0">JT</div>
+              <div>
+                <p class="font-semibold text-zinc-900 text-sm">Jessica Torres</p>
+                <p class="text-zinc-400 text-xs">Owner, Glow Aesthetics & Med Spa — Miami, FL</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Industry Tags -->
+        <div class="fade-up">
+          <p class="text-center text-zinc-400 text-sm mb-5 font-medium">Built for service businesses across industries:</p>
+          <div class="flex flex-wrap justify-center gap-2 sm:gap-3">
+            <span class="px-4 py-2 bg-zinc-100 text-zinc-600 text-sm rounded-full font-medium">Dental Clinics</span>
+            <span class="px-4 py-2 bg-zinc-100 text-zinc-600 text-sm rounded-full font-medium">Law Firms</span>
+            <span class="px-4 py-2 bg-zinc-100 text-zinc-600 text-sm rounded-full font-medium">Med Spas</span>
+            <span class="px-4 py-2 bg-zinc-100 text-zinc-600 text-sm rounded-full font-medium">Home Services</span>
+            <span class="px-4 py-2 bg-zinc-100 text-zinc-600 text-sm rounded-full font-medium">Real Estate</span>
+            <span class="px-4 py-2 bg-zinc-100 text-zinc-600 text-sm rounded-full font-medium">Contractors</span>
+            <span class="px-4 py-2 bg-zinc-100 text-zinc-600 text-sm rounded-full font-medium">Financial Services</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section id="how-it-works" class="py-20 sm:py-28 px-5 sm:px-8 bg-zinc-50">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-14 fade-up">
+          <p class="text-blue-600 text-xs sm:text-sm font-semibold tracking-[0.15em] uppercase mb-3">The Process</p>
+          <h2 class="text-3xl sm:text-4xl font-bold text-zinc-900 leading-tight">
+            Three steps to a full pipeline.
+          </h2>
+          <p class="text-zinc-500 text-lg mt-3 max-w-lg mx-auto">
+            From your first conversation to qualified leads in your inbox — here's what it looks like.
+          </p>
+        </div>
+
+        <div class="relative">
+          <!-- Connector line desktop -->
+          <div class="hidden sm:block absolute top-8 left-16 right-16 h-px bg-zinc-200 z-0"></div>
+
+          <div class="grid sm:grid-cols-3 gap-10 sm:gap-8 relative z-10">
+
+            <div class="text-center fade-up">
+              <div class="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-5 text-2xl font-bold shadow-lg shadow-blue-600/30">1</div>
+              <h3 class="font-bold text-zinc-900 text-lg mb-3">Book a Strategy Call</h3>
+              <p class="text-zinc-500 text-sm leading-relaxed">
+                A free 30-minute call to understand your business, goals, and current situation. No pitch, no pressure — just an honest conversation about whether we're a fit.
+              </p>
+            </div>
+
+            <div class="text-center fade-up delay-1">
+              <div class="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-5 text-2xl font-bold shadow-lg shadow-blue-600/30">2</div>
+              <h3 class="font-bold text-zinc-900 text-lg mb-3">We Build Your System</h3>
+              <p class="text-zinc-500 text-sm leading-relaxed">
+                In 2–3 weeks, your ads are live, your funnel is running, and your CRM is set up. You don't lift a finger. We handle everything and keep you in the loop throughout.
+              </p>
+            </div>
+
+            <div class="text-center fade-up delay-2">
+              <div class="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center mx-auto mb-5 text-2xl font-bold shadow-lg shadow-blue-600/30">3</div>
+              <h3 class="font-bold text-zinc-900 text-lg mb-3">Leads Start Flowing</h3>
+              <p class="text-zinc-500 text-sm leading-relaxed">
+                Qualified prospects land in your pipeline. You get weekly reports showing exactly what's working. We optimize continuously — results only improve over time.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ SECTION ===== -->
+    <section class="py-20 sm:py-28 px-5 sm:px-8 bg-white">
+      <div class="max-w-2xl mx-auto">
+        <div class="text-center mb-12 fade-up">
+          <h2 class="text-3xl sm:text-4xl font-bold text-zinc-900">Common questions.</h2>
+        </div>
+
+        <div class="space-y-3 fade-up">
+
+          <div class="faq-item border border-zinc-200 rounded-xl overflow-hidden">
+            <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left font-semibold text-zinc-900 hover:bg-zinc-50 transition-colors">
+              <span>"We've worked with agencies before and got burned."</span>
+              <svg class="faq-chevron w-5 h-5 text-zinc-400 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p class="px-6 pb-5 text-zinc-500 text-sm leading-relaxed">
+                Most agency horror stories come from vague deliverables, no accountability, and reports that obscure more than they reveal. We operate differently: clear expectations upfront, weekly performance reports, and full visibility into where every dollar goes. If something isn't working, you'll know before we do.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item border border-zinc-200 rounded-xl overflow-hidden">
+            <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left font-semibold text-zinc-900 hover:bg-zinc-50 transition-colors">
+              <span>"We don't have a huge budget for ads."</span>
+              <svg class="faq-chevron w-5 h-5 text-zinc-400 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p class="px-6 pb-5 text-zinc-500 text-sm leading-relaxed">
+                You don't need one. Most clients start modest — the goal is to validate what works first, then scale up once we have proof. Ad spend isn't a cost center; it's a trackable investment with measurable returns. We'll show you the numbers and let you decide how fast to grow.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item border border-zinc-200 rounded-xl overflow-hidden">
+            <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left font-semibold text-zinc-900 hover:bg-zinc-50 transition-colors">
+              <span>"Will this actually work for my industry?"</span>
+              <svg class="faq-chevron w-5 h-5 text-zinc-400 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p class="px-6 pb-5 text-zinc-500 text-sm leading-relaxed">
+                If you're a service-based business with a defined offer and a real client value, the system works. We've built this for dental clinics, law firms, med spas, contractors, real estate teams, and more. The mechanics are the same — we adapt the messaging and channels to your specific market.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item border border-zinc-200 rounded-xl overflow-hidden">
+            <button class="faq-trigger w-full flex items-center justify-between px-6 py-5 text-left font-semibold text-zinc-900 hover:bg-zinc-50 transition-colors">
+              <span>"Are we locked into a long-term contract?"</span>
+              <svg class="faq-chevron w-5 h-5 text-zinc-400 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p class="px-6 pb-5 text-zinc-500 text-sm leading-relaxed">
+                We work on a monthly retainer, not a locked-in annual contract. We'd rather keep your business by delivering results than hold you in place with paperwork. Start with the strategy call — there's zero commitment until you decide it makes sense.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FINAL CTA ===== -->
+    <section id="book" class="bg-zinc-950 py-20 sm:py-32 px-5 sm:px-8 text-white">
+      <div class="max-w-3xl mx-auto text-center fade-up">
+        <p class="text-blue-400 text-xs sm:text-sm font-semibold tracking-[0.15em] uppercase mb-4">Ready to Grow?</p>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight mb-5">
+          Stop guessing. Start getting<br class="hidden sm:block" /> qualified leads on autopilot.
+        </h2>
+        <p class="text-zinc-400 text-lg leading-relaxed max-w-xl mx-auto mb-10">
+          Book a free 30-minute strategy call. We'll look at your current situation, identify the biggest opportunities, and give you a clear picture of what's possible — no strings attached.
+        </p>
+        <!-- Replace href below with your Calendly or booking link -->
+        <a href="#book" class="inline-block bg-blue-600 hover:bg-blue-500 text-white px-10 py-5 rounded-xl font-bold text-lg transition-colors duration-200 shadow-xl shadow-blue-600/20">
+          Book a Free Strategy Call →
+        </a>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 mt-8 text-zinc-500 text-sm">
+          <span class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            No contracts
+          </span>
+          <span class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            No commitment
+          </span>
+          <span class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            30 minutes, completely free
+          </span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-zinc-900 border-t border-zinc-800 px-5 sm:px-8 py-8">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-zinc-500 text-sm">
+      <p class="font-semibold text-zinc-400">Ayaan Malik</p>
+      <p>© 2025 Ayaan Malik. All rights reserved.</p>
+      <!-- Replace with Ayaan's real email -->
+      <a href="mailto:hello@ayaanmalik.com" class="hover:text-zinc-300 transition-colors">hello@ayaanmalik.com</a>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll-triggered fade-up animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const item = trigger.closest('.faq-item');
+        const answer = item.querySelector('.faq-answer');
+        const isOpen = item.classList.contains('open');
+
+        // Close all
+        document.querySelectorAll('.faq-item').forEach(i => {
+          i.classList.remove('open');
+          i.querySelector('.faq-answer').classList.remove('open');
+        });
+
+        // Open clicked if it was closed
+        if (!isOpen) {
+          item.classList.add('open');
+          answer.classList.add('open');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
